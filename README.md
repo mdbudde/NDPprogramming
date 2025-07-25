@@ -11,6 +11,6 @@ To access and start the notebooks, open mybinder.org in web browser and enter th
 
 
 <br><br>
-Once open, in the folder view, select the jupyter notebook to begin:
+Once open, in the folder view, double-click the jupyter notebook to begin editing and running code:
 <img width="801" height="451" alt="image" src="https://github.com/user-attachments/assets/f176d6c5-714b-4c1e-8d88-2f52b0120091" />
 
