@@ -3,13 +3,17 @@ import matplotlib.pyplot as plt
 
 # Load the CSV file
 file_path = 'FakeAnimalData.csv'
+save_path = 'Total_Nsuccessful_Points_by_Animal.png'
+print('Data path is ' + file_path)
 
 # Read the CSV into a DataFrame
 data = pd.read_csv(file_path)
+print("data Loaded")
 
 # Group data by 'Animal' and sum the 'Nsuccessful' points
 grouped_data = data.groupby('Rat')['Nsuccessful'].sum()
 
+print('Plotting')
 # Create a bar plot
 ax = grouped_data.plot(kind='bar', color='red', edgecolor='black')
 
@@ -24,5 +28,6 @@ ax.spines['right'].set_visible(False)  # Remove right axis
 plt.xticks(rotation=0, fontsize=12, fontweight='bold')  # Make x-axis labels horizontal and bold
 plt.yticks(fontsize=12, fontweight='bold')  # Make y-axis labels bold
 
+print('Writing file ' + save_path)
 # Show the plot
-plt.savefig('Total_Nsuccessful_Points_by_Animal.png', format='png', dpi=300, bbox_inches='tight')
+plt.savefig(save_path, format='png', dpi=300, bbox_inches='tight')
