@@ -1,6 +1,6 @@
 # NDPprogramming
 
-
+ 
 Programming introduction seminar for Medical College of Wisconsin, Neuroscience Doctoral Program bootcamp.
 
 To access and start the notebooks, open mybinder.org in web browser and enter this repository, or select this link:
